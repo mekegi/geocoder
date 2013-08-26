@@ -1,0 +1,20 @@
+{
+    "name": "mekegi/geocoder",
+    "type": "yii-extension",
+    "description": "Geocoder for convert plain adress to structured address",
+    "keywords": ["google-maps-api", "yandex-geo", "yii-extension", "geocoder"],
+    "homepage": "http://github.com/mekegi/geocoder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arsen Abdusalamov",
+            "email": "duburlan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {"mekegi\\geocoder": "./"}
+    }
+}

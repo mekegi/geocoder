@@ -1,6 +1,6 @@
 <?php
 
-namespace application\extensions\geocoder;
+namespace mekegi\geocoder;
 
 class Address
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace application\extensions\geocoder\vendor;
+namespace mekegi\geocoder\vendor;
 
 class Google extends Base
 {
@@ -12,7 +12,7 @@ class Google extends Base
      * @since 13.08.13 11:51
      * @author Arsen Abdusalamov
      * @param string $plainAddress
-     * @return \application\extensions\geocoder\Address
+     * @return \mekegi\geocoder\Address
      */
     public function parseAddress($plainAddress)
     {
@@ -51,11 +51,11 @@ class Google extends Base
      *
      * @param type $plainAddress
      * @param array $rawAddress
-     * @return \application\extensions\geocoder\Address
+     * @return \mekegi\geocoder\Address
      */
     protected function postProcess($plainAddress, array $rawAddress)
     {
-        $address = new \application\extensions\geocoder\Address($plainAddress);
+        $address = new \mekegi\geocoder\Address($plainAddress);
         if (empty($rawAddress['status']) || $rawAddress['status'] != 'OK' || !isset($rawAddress['results'][0]['address_components'])) {
             return $address;
         }

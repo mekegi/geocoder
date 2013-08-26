@@ -1,6 +1,6 @@
 <?php
 
-namespace application\extensions\geocoder\vendor;
+namespace mekegi\geocoder\vendor;
 
 abstract class Base
 {

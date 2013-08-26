@@ -5,7 +5,7 @@
  * @deprecated 13.08.13 12:30 use
  */
 
-namespace application\extensions\geocoder\vendor;
+namespace mekegi\geocoder\vendor;
 
 class Yandex extends Base
 {
@@ -32,7 +32,7 @@ class Yandex extends Base
 
         $firstGeoData = reset($geoObjectArray);
 
-        $address = new \application\extensions\geocoder\Address($plainAddress);
+        $address = new \mekegi\geocoder\Address($plainAddress);
 
         $countryData = $firstGeoData['GeoObject']['metaDataProperty']['GeocoderMetaData']['AddressDetails']['Country'];
 

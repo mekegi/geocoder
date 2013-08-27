@@ -6,21 +6,25 @@ Yii ext for geocoder
 Installation
 ------------
 add to composer.json
+
     "require": {
         ...
         "mekegi/geocoder": "@dev"
         ...
     },
     "repositories": [
+        ...
         {
             "type": "git",
             "url": "http://github.com/mekegi/geocoder"
         }
+        ...
     ],
 
 Config
 ------
 add to config.php
+
     'aliases' => [
         // ...
         'vendor' => 'application.vendor', // path to composer vendor dir

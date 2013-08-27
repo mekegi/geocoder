@@ -6,10 +6,20 @@ Yii ext for geocoder
 Installation
 ------------
 add to config.php
-
-    'geocoder' => [
-        'class' => 'mekegi\geocoder\Geocoder',
-        'vendor' => 'google', // or 'yandex', but only google geo api gets apartment
+    'aliases' => [
+        // ...
+        'vendor' => 'application.vendor', // path to composer vendor dir
+        'mekegi.geocoder' => 'vendor.mekegi.geocoder',
+        // ...
+    ],
+    // ...
+    'components' => [
+        // ...
+        'geocoder' => [
+            'class' => 'mekegi\geocoder\Geocoder',
+            'vendor' => 'google', // or 'yandex', but only google geo api gets apartment
+        ],
+        // ...
     ],
 
 Usage
